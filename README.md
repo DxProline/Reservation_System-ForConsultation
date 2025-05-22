@@ -96,6 +96,55 @@ Vlož klientský ID a tajný klíč do Configs/secret.php:
 `define("CLIENT_SECRET", "xxxx");`
 `define("REDIRECT_URI", "http://tvujWEB/Reservation_System-ForConsultation/Actions/callback.php");`
 
+
+## 👣 Uživatelský manuál – Jak systém používat
+
+### Přihlášení do systému
+
+Otevři stránku systému ve webovém prohlížeči
+
+Klikni na tlačítko „Přihlásit se pomocí Microsoft účtu“
+
+Po úspěšném přihlášení budeš automaticky zařazen jako student (výchozí role)
+
+### Funkce podle role
+
+__👤 Student__
+
+Po přihlášení klikni na „Volné konzultace“
+
+Vyber konzultaci a klikni na „Rezervovat“
+
+Vyplň předmět a popis problému (nepovinné)
+
+Potvrď rezervaci → obdržíš e-mail
+
+Konzultaci lze zrušit v sekci „Rezervované konzultace“
+
+__👨‍🏫 Učitel__
+
+Klikni na „Vytvořit konzultaci“
+
+Vyplň datum, čas, délku, předmět a popis
+
+Systém automaticky zabrání konfliktům v čase
+
+Sleduj přihlášené studenty v sekci „Rezervované konzultace“
+
+V případě nutnosti zruš konzultaci → student dostane e-mail
+
+__👨‍💼 Administrátor__
+
+Otevři „Seznam uživatelů“
+
+Můžeš měnit role student/učitel/admin
+
+Funkce „Impersonifikace“ ti umožní přihlásit se jako jiný uživatel
+
+Sleduj historii konzultací nebo zakládej konzultace za ostatní
+
+
+
 ##### 5. PHPMailer
 
 Otevři terminál v root adresáři projektu
@@ -157,5 +206,5 @@ Projekt je tvořen DxProlinem (mnou) je tedy sice OpenSource ale při zavedení 
 
 **🙏 Poděkování**
 
-Velké díky patří panu učiteli na Programování na mé škole, @kuba_vojak  za podněty k zabezpečení a jeho přítelkyni za grafický vizuál.
+Velké díky patří panu učiteli na Programování na mé škole, @kubavojak  za podněty k zabezpečení a jeho přítelkyni za grafický vizuál.
 
