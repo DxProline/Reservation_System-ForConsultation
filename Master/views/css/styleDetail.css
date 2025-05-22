@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.consultation-container {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px; /* Přidán margin-top pro odsazení */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#consultation-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.header {
+    background-color: white;
+    padding: 20px 30px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.consultation-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 80px;
+    resize: none;
+}
+
+button {
+    padding: 10px;
+    background: #ff9600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #e68400;
+}
+
+
+.nav a {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    max-height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.error {
+    border: 2px solid red;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

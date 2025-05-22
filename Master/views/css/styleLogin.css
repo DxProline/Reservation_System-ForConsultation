@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-screen{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 550px;
+    height: 500px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding-top: 10px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.logo-login{
+    width: 250px;
+    margin-top: 20px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.logo-microsoft{
+    overflow: hidden;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+
+}

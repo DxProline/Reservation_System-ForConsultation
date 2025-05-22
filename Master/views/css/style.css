@@ -1,0 +1,290 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* ...existing code... */
+
+
+.header {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* Zarovná horizontálně */
+    align-items: center; /* Zarovná vertikálně */
+    width: 120px;
+    height: 120px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.logo img {
+    max-width: 140%;
+    max-height: 140%;
+    object-fit: contain; /* Zajistí, že obrázek bude přizpůsoben rodičovskému elementu */
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-family: "Segoe UI Light", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 24px;
+}
+.nav a:hover {
+    color:  #ff9600;
+    border-radius: 2px;
+}
+.nav a.active {
+    color: #ff9600;
+    font-weight: bold;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: "Segoe UI Light", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logout:hover {
+    color: #ff2626;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    margin: 40px auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.table-container {
+    margin: 40px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(40, 31, 31, 0.1);
+}
+
+table {
+    background-color: #ffffff;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th {
+    background: #ff9600;
+    padding: 12px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.fill {
+    width: 100%;
+    padding: 10px;
+}
+/*Učitelé----------------------------------------------------------------------------------------------------------------------------*/
+.allConsultations th:nth-child(1), .allConsultations td:nth-child(1) { width: 10%; }
+.allConsultations th:nth-child(2), .allConsultations td:nth-child(2) { width: 15%; }
+.allConsultations th:nth-child(3), .allConsultations td:nth-child(3) { width: 10%; }
+.allConsultations th:nth-child(4), .allConsultations td:nth-child(4) { width: 15%; }
+.allConsultations th:nth-child(5), .allConsultations td:nth-child(5) { width: 25%; }
+.allConsultations th:nth-child(6), .allConsultations td:nth-child(6) { width: 25%; }
+
+.reservedConsultationsForTeacher th:nth-child(1), .reservedConsultationsForTeacher td:nth-child(1) { width: 10%; }
+.reservedConsultationsForTeacher th:nth-child(2), .reservedConsultationsForTeacher td:nth-child(2) { width: 15%; }
+.reservedConsultationsForTeacher th:nth-child(3), .reservedConsultationsForTeacher td:nth-child(3) { width: 10%; }
+.reservedConsultationsForTeacher th:nth-child(4), .reservedConsultationsForTeacher td:nth-child(4) { width: 15%; }
+.reservedConsultationsForTeacher th:nth-child(5), .reservedConsultationsForTeacher td:nth-child(5) { width: 25%; }
+.reservedConsultationsForTeacher th:nth-child(6), .reservedConsultationsForTeacher td:nth-child(6) { width: 25%; }
+
+.pastConsultationsForTeacher th:nth-child(1), .pastConsultationsForTeacher td:nth-child(1) { width: 10%; }
+.pastConsultationsForTeacher th:nth-child(2), .pastConsultationsForTeacher td:nth-child(2) { width: 15%; }
+.pastConsultationsForTeacher th:nth-child(3), .pastConsultationsForTeacher td:nth-child(3) { width: 10%; }
+.pastConsultationsForTeacher th:nth-child(4), .pastConsultationsForTeacher td:nth-child(4) { width: 15%; }
+.pastConsultationsForTeacher th:nth-child(5), .pastConsultationsForTeacher td:nth-child(5) { width: 25%; }
+.pastConsultationsForTeacher th:nth-child(6), .pastConsultationsForTeacher td:nth-child(6) { width: 25%; }
+
+.freeConsultationsForTeacher th:nth-child(1), .freeConsultationsForTeacher td:nth-child(1) { width: 10%; }
+.freeConsultationsForTeacher th:nth-child(2), .freeConsultationsForTeacher td:nth-child(2) { width: 20%; }
+.freeConsultationsForTeacher th:nth-child(3), .freeConsultationsForTeacher td:nth-child(3) { width: 15%; }
+.freeConsultationsForTeacher th:nth-child(4), .freeConsultationsForTeacher td:nth-child(4) { width: 20%; }
+.freeConsultationsForTeacher th:nth-child(5), .freeConsultationsForTeacher td:nth-child(5) { width: 35%; }
+
+
+/*Studenti----------------------------------------------------------------------------------------------------------------------------*/
+.reservedConsultationsForStudent th:nth-child(1), .reservedConsultationsForStudent td:nth-child(1) { width: 7%; }
+.reservedConsultationsForStudent th:nth-child(2), .reservedConsultationsForStudent td:nth-child(2) { width: 15%; }
+.reservedConsultationsForStudent th:nth-child(3), .reservedConsultationsForStudent td:nth-child(3) { width: 8%; }
+.reservedConsultationsForStudent th:nth-child(4), .reservedConsultationsForStudent td:nth-child(4) { width: 10%; }
+.reservedConsultationsForStudent th:nth-child(5), .reservedConsultationsForStudent td:nth-child(5) { width: 10%; }
+.reservedConsultationsForStudent th:nth-child(6), .reservedConsultationsForStudent td:nth-child(6) { width: 25%; }
+.reservedConsultationsForStudent th:nth-child(7), .reservedConsultationsForStudent td:nth-child(7) { width: 25%; }
+
+.pastConsultationsForStudent th:nth-child(1), .pastConsultationsForStudent td:nth-child(1) { width: 7%; }
+.pastConsultationsForStudent th:nth-child(2), .pastConsultationsForStudent td:nth-child(2) { width: 15%; }
+.pastConsultationsForStudent th:nth-child(3), .pastConsultationsForStudent td:nth-child(3) { width: 8%; }
+.pastConsultationsForStudent th:nth-child(4), .pastConsultationsForStudent td:nth-child(4) { width: 10%; }
+.pastConsultationsForStudent th:nth-child(5), .pastConsultationsForStudent td:nth-child(5) { width: 10%; }
+.pastConsultationsForStudent th:nth-child(6), .pastConsultationsForStudent td:nth-child(6) { width: 25%; }
+.pastConsultationsForStudent th:nth-child(7), .pastConsultationsForStudent td:nth-child(7) { width: 25%; }
+
+
+.freeConsultationsForStudent th:nth-child(1), .freeConsultationsForStudent td:nth-child(1) { width: 10%; }
+.freeConsultationsForStudent th:nth-child(2), .freeConsultationsForStudent td:nth-child(2) { width: 15%; }
+.freeConsultationsForStudent th:nth-child(3), .freeConsultationsForStudent td:nth-child(3) { width: 10%; }
+.freeConsultationsForStudent th:nth-child(4), .freeConsultationsForStudent td:nth-child(4) { width: 10%; }
+.freeConsultationsForStudent th:nth-child(5), .freeConsultationsForStudent td:nth-child(5) { width: 20%; }
+.freeConsultationsForStudent th:nth-child(6), .freeConsultationsForStudent td:nth-child(6) { width: 35%; }
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .header {
+        display: flex;
+        flex-direction: column; /* Přemění hlavičku na sloupec */
+        align-items: center; /* Zarovná prvky na střed */
+        text-align: center; /* Zarovná textové prvky */
+        gap: 15px; /* Přidá mezery mezi prvky */
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row; /* Přemění navigaci na sloupec */
+        align-items: center; /* Zarovná odkazy na střed */
+        gap: 10px;
+    }
+    
+    .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center; /* Zarovná horizontálně */
+        align-items: center; /* Zarovná vertikálně */
+        /*height: 60px; /* Přizpůsob výšku, pokud chceš i vertikální centrování */
+        width: 150px; /* Zmenší šířku loga */
+        height: 150px; /* Zmenší výšku loga */
+    }
+
+    .table-container {
+        margin: 20px;
+        overflow-x: auto; /* Přidá horizontální posuvník pro tabulku */
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 750px) {
+    .table-container {
+        overflow-x: auto; /* Přidá horizontální posuvník */
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+        min-width: 480px; /* Zajistí, že se tabulka nesmrští */
+        border-collapse: collapse;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+        white-space: nowrap; /* Zabrání zalomení textu */
+    }
+
+    th {
+        background: #ff9600;
+        text-align: left;
+    }
+
+    td {
+        border: 1px solid #dcdcdc;
+    }
+
+
+    .header {
+        display: flex;
+        flex-direction: column; /* Přemění hlavičku na sloupec */
+        align-items: center; /* Zarovná prvky na střed */
+        text-align: center; /* Zarovná textové prvky */
+        gap: 15px; /* Přidá mezery mezi prvky */
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: column; /* Přemění navigaci na sloupec */
+        align-items: center; /* Zarovná odkazy na střed */
+        gap: 10px;
+    }
+    
+    .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center; /* Zarovná horizontálně */
+        align-items: center; /* Zarovná vertikálně */
+        height: 100%; /* Přizpůsob výšku, pokud chceš i vertikální centrování */
+        width: 120px; /* Zmenší šířku loga */
+        height: 120px; /* Zmenší výšku loga */
+    }
+}

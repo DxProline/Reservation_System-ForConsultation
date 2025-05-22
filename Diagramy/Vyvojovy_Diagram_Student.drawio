@@ -1,0 +1,105 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0" version="25.0.3">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1171" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sxZ6l7dxMCIAEPfwkkK_-2" target="sxZ6l7dxMCIAEPfwkkK_-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-2" value="Začátek" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="70" y="60" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-3" value="ConsultationId,&lt;div&gt;Description,&lt;/div&gt;&lt;div&gt;subjectId&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="55" y="170" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-5" value="Existuje konzultace v databázi?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="70" y="270" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-7" value="Chyba" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="250" y="290" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sxZ6l7dxMCIAEPfwkkK_-5" target="sxZ6l7dxMCIAEPfwkkK_-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sxZ6l7dxMCIAEPfwkkK_-3" target="sxZ6l7dxMCIAEPfwkkK_-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-12" value="Ne" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="210" y="300" width="20" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-14" value="Ano" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="130" y="380" width="20" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sxZ6l7dxMCIAEPfwkkK_-15" target="sxZ6l7dxMCIAEPfwkkK_-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-15" value="Má konzultace přiřazeného studenta?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="60" y="410" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sxZ6l7dxMCIAEPfwkkK_-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-17" value="Chyba" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="250" y="435" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-19" value="Ano" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="220" y="450" width="20" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-21" value="Ne" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="130" y="530" width="20" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sxZ6l7dxMCIAEPfwkkK_-22" target="sxZ6l7dxMCIAEPfwkkK_-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-22" value="Existuje předmět v databázi?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="55" y="570" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sxZ6l7dxMCIAEPfwkkK_-15" target="sxZ6l7dxMCIAEPfwkkK_-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-24" value="Chyba" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="250" y="605" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-25" value="Ne" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="220" y="620" width="20" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sxZ6l7dxMCIAEPfwkkK_-22" target="sxZ6l7dxMCIAEPfwkkK_-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-29" value="Ano" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="130" y="720" width="20" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-30" value="Aktualizace Description, SubjectId a studentId konzultace v databázi" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="55" y="770" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-33" value="Byla aktualizace úspěšná?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="60" y="870" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sxZ6l7dxMCIAEPfwkkK_-30" target="sxZ6l7dxMCIAEPfwkkK_-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-36" value="Chyba" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="250" y="895" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-37" value="Ne" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="220" y="910" width="20" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sxZ6l7dxMCIAEPfwkkK_-33" target="sxZ6l7dxMCIAEPfwkkK_-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-40" value="Konec" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="70" y="1030" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sxZ6l7dxMCIAEPfwkkK_-33" target="sxZ6l7dxMCIAEPfwkkK_-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sxZ6l7dxMCIAEPfwkkK_-42" value="Ano" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="130" y="990" width="20" height="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

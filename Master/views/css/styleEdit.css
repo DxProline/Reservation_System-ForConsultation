@@ -1,0 +1,173 @@
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.custom-button {
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    width: 184px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #ff2626;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.pagination .current-page {
+    font-size: 18px;
+    color: #ff2626;
+    margin: 0 10px;
+}
+.reservationButton.cancel {
+    border: 1px solid #ff004c;
+    color: #ff004c;
+    margin: 0 auto;
+}
+
+.reservationButton.cancel:hover {
+    color: white;
+    background-color: #ff2626;
+}
+.reservationButton{
+    border-radius: 10px;
+    border: 1px solid #6d6d6d;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block; /* Přidá inline-block display */
+    width: auto; /* Nastaví šířku na automatickou velikost */
+}
+
+.reservationButton.created {
+    border: 1px solid #28a745;
+    color: #28a745;
+    margin: 0 auto;
+}
+
+#choice {
+    border: 1px solid #ff9600;
+    color: #ff9600;
+    position: absolute;
+    left: 10%;
+}
+#choice:hover {
+
+    color: white;
+    background-color: #ff9600;
+}
+
+#delete {
+    border: 1px solid #ff2626;
+    color: #ff2626;
+    position: absolute;
+    right: 10%;
+}
+#delete:hover {
+    color: white;
+    background-color: #ff2626;
+}
+
+#create {
+    border: 1px solid #00b4ff;
+    color: #00b4ff;
+    margin: 0 auto;
+}
+#create:hover {
+    color: white;
+    background-color: #00b4ff;
+}
+
+.pagination {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.userPromoteButton.userPromote {
+    border: 1px solid #00b4ff;
+    color: #00b4ff;
+    margin: 0 auto;
+}
+
+.userPromoteButton.userPromote:hover {
+    color: white;
+    background-color: #00b4ff;
+}
+.userPromoteButton{
+    border-radius: 10px;
+    border: 1px solid #00b4ff;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block; /* Přidá inline-block display */
+    width: auto; /* Nastaví šířku na automatickou velikost */
+}
+
+
+.userDegradeButton.userDegrade {
+    border: 1px solid #ff2626;
+    color: #ff2626;
+    margin: 0 auto;
+}
+
+.userDegradeButton.userDegrade:hover {
+    color: white;
+    background-color: #ff2626;
+}
+.userDegradeButton{
+    border-radius: 10px;
+    border: 1px solid #ff2626;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block; /* Přidá inline-block display */
+    width: auto; /* Nastaví šířku na automatickou velikost */
+}
+
+
+.userSelectButton.userSelect {
+    border: 1px solid #ff9600;
+    color: #ff9600;
+    margin: 0 auto;
+}
+
+.userSelectButton.userSelect:hover {
+    color: white;
+    background-color: #ff9600;
+}
+.userSelectButton{
+    border-radius: 10px;
+    border: 1px solid #ff9600;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block; /* Přidá inline-block display */
+    width: auto; /* Nastaví šířku na automatickou velikost */
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
