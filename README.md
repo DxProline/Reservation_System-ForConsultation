@@ -1,4 +1,4 @@
-# Reservation_System-Consultation
+# Rezervační systém na konzultace
 
 Tento rezervační systém na konzultace vznikl jako můj maturitní projekt na Střední škole se zaměřením na IT. 
 Cílem je usnadnit školám dohadování konzultací mezi učiteli a studenty pomocí přehledného webového rozhraní.
@@ -210,7 +210,7 @@ Velké díky patří panu učiteli na Programování na mé škole, [@kubavojak]
 
 
 
-ENG: # Reservation\_System-Consultation
+# ENG: Reservation\_System-Consultation
 
 This consultation reservation system was developed as my graduation project at a high school specializing in IT.
 The goal is to simplify the scheduling of consultations between teachers and students through a clear and user-friendly web interface.
