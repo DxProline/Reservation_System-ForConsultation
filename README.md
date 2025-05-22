@@ -206,5 +206,193 @@ Projekt je tvořen DxProlinem (mnou) je tedy sice OpenSource ale při zavedení 
 
 **🙏 Poděkování**
 
-Velké díky patří panu učiteli na Programování na mé škole, @kubavojak  za podněty k zabezpečení a jeho přítelkyni za grafický vizuál.
+Velké díky patří panu učiteli na Programování na mé škole, [@kubavojak](https://github.com/kubavojak) za podněty k zabezpečení a jeho přítelkyni za grafický vizuál.
+
+
+
+ENG: # Reservation\_System-Consultation
+
+This consultation reservation system was developed as my graduation project at a high school specializing in IT.
+The goal is to simplify the scheduling of consultations between teachers and students through a clear and user-friendly web interface.
+
+The system is ready for deployment in a school environment, supporting Microsoft account authentication and MariaDB/PostgreSQL database integration. Thanks to role separation between students, teachers, and administrators, the system can easily scale for larger institutions.
+
+---
+
+## 🚀 Features
+
+* Login via Microsoft account (OAuth 2.0)
+* Students can book and cancel consultations
+* Teachers can create and manage consultations
+* Admins can manage users and impersonate roles
+* Overview of reservations and history
+* Email notifications via PHPMailer
+
+---
+
+## 📸 Application Screenshots
+
+| Login Screen        | Students – Select Consultation |
+| ------------------- | ------------------------------ |
+| ![](Navrh2_web.png) | ![](Web_Student_layout.png)    |
+
+| Teacher – Create Consultation | Admin – User List         |
+| ----------------------------- | ------------------------- |
+| ![](Techer_Web_Layout.png)    | ![](Admin_Web_Layout.png) |
+
+---
+
+## 📆 Installation and Deployment (Dev)
+
+### 📀 Requirements
+
+* PHP 8.1 or newer
+* Apache / Nginx
+* MariaDB or PostgreSQL
+* Git
+* Composer (for PHPMailer)
+* Microsoft Entra ID (for OAuth 2.0)
+
+### => Clone the repository:
+
+```bash
+git clone https://github.com/DxProline/Reservation_System-ForConsultation.git
+cd Reservation_System-ForConsultation
+```
+
+### => Database Configuration
+
+* Create a database (e.g. `consultation_system`)
+* Import SQL schema and demo data if provided by the author
+* In `Configs/secret.php`, set your database credentials:
+
+```php
+define("DB_HOST", "localhost");
+define("DB_NAME", "consultation_system");
+define("DB_USER", "root");
+define("DB_PASS", "your_password");
+```
+
+### => Microsoft OAuth Configuration
+
+1. Login to [Microsoft Entra](https://entra.microsoft.com)
+2. Register a new application to obtain your CLIENT\_ID
+3. Retrieve your domain's TenantID
+4. Set the callback URL:
+
+```
+http://yourWEB/Reservation_System-ForConsultation/Actions/callback.php
+```
+
+5. Grant permissions:
+
+   * `openid`
+   * `User.Read`
+   * `email`
+6. Fill in the credentials in `Configs/secret.php`:
+
+```php
+define("CLIENT_ID", "xxxx");
+define("CLIENT_SECRET", "xxxx");
+define("REDIRECT_URI", "http://yourWEB/Reservation_System-ForConsultation/Actions/callback.php");
+```
+
+### => PHPMailer
+
+1. Open terminal in project root
+2. Run:
+
+```bash
+composer require phpmailer/phpmailer
+```
+
+3. Edit SMTP settings in `Utils/mailer.php`
+
+---
+
+## 👣 User Guide – How to Use the System
+
+### Login to the System
+
+* Open the system website in your browser
+* Click on **"Sign in with Microsoft account"**
+* Upon successful login, you are automatically assigned the default role: student
+
+### Role-Based Functionality
+
+**👤 Student**
+
+* After login, go to "Available Consultations"
+* Select a consultation and click "Reserve"
+* Fill in the subject and problem description (optional)
+* Confirm the reservation → you will receive an email
+* You can cancel your booking in the "Reserved Consultations" section
+
+**👨‍🏫 Teacher**
+
+* Click on "Create Consultation"
+* Enter date, time, duration, subject, and description
+* The system prevents time conflicts
+* Monitor registered students in the "Reserved Consultations" section
+* If needed, cancel a consultation → the student is notified via email
+
+**👨‍💼 Administrator**
+
+* Open the "User List"
+* Change user roles (student/teacher/admin)
+* Use the "Impersonate" feature to log in as another user
+* Monitor consultation history or create bookings on behalf of others
+
+---
+
+## 🔧 Code Documentation (Key Scripts)
+
+`createConsultation.php`
+
+* Used by teachers to create a new consultation
+* Validates date/time, inserts into `consultations` table
+
+`reserveConsultation.php`
+
+* Student books a consultation
+* Sends email notification to student and teacher via PHPMailer
+
+`cancelConsultation.php`
+
+* Consultation is cancelled by a teacher or admin
+* Students (if booked) are notified
+
+`cancelReservation.php`
+
+* Student cancels their reservation
+* Teacher is notified of the cancellation
+
+`updateUserType.php`
+
+* Admin changes user role (0 = student, 1 = teacher, 2 = admin)
+
+`callback.php`
+
+* Handles Microsoft OAuth login return
+* Adds the user to the database if not present
+
+---
+
+## 🗓 Version
+
+**1.0**
+Initial stable version with full functionality
+*2025*
+
+---
+
+## 💼 License
+
+This project was developed by DxProline (myself). While it is open-source, the author reserves the right to charge for future usage in institutional school systems.
+
+---
+
+## 🙏 Acknowledgements
+
+Special thanks to my programming teacher at school, [@kubavojak](https://github.com/kubavojak), for his security insights, and to his partner for the visual design.
 
