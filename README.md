@@ -1,6 +1,6 @@
 # Rezervační systém na konzultace
 
-Tento rezervační systém na konzultace vznikl jako můj maturitní projekt na Střední škole se zaměřením na IT. 
+Tento rezervační systém na konzultace vznikl jako můj maturitní projekt na střední škole se zaměřením na IT. 
 Cílem je usnadnit školám dohadování konzultací mezi učiteli a studenty pomocí přehledného webového rozhraní.
 
 Systém je připraven k nasazení ve školním prostředí s podporou autentizace přes Microsoft účty a databází MariaDB/PostgreSQL. Díky rozdělení rolí mezi studenty, učitele a administrátory je možné systém snadno rozšířit i pro větší školní zařízení.
@@ -154,6 +154,71 @@ Spusť:
 `composer require phpmailer/phpmailer`
 
 Uprav SMTP konfiguraci v Utils/mailer.php
+
+
+## 📊 UML a systémové diagramy
+
+### 1. Diagram případů použití
+![Diagram_Případu_Užití.png](./Diagramy/Diagram_Případu_Užití.png)
+
+Diagram se využívá k definici hlavních funkcí a rolí jednotlivých uživatelů systému – učitel, student, administrátor – a jejich interakcí s aplikací.
+
+---
+
+### 2. Diagram tříd
+![Diagram_Tříd.png](./Diagramy/Diagram_Tříd.png)
+
+Znázorňuje strukturu systému pomocí tříd, jejich atributů, metod a vztahů. Např. student si může zarezervovat konzultaci, učitel konzultaci vytvoří.
+
+---
+
+### 3. Vývojový diagram – Vytvoření konzultace učitelem
+![Vývojový_Diagram_Učitel.png](./Diagramy/Vývojový_Diagram_Učitel.png)
+
+Zobrazuje logiku systému při vytváření konzultace učitelem. Obsahuje rozhodovací větve (např. zda má učitel konzultaci ve stejný čas).
+
+---
+
+### 4. Vývojový diagram – Rezervace konzultace studentem
+![Vývojový_Diagram_Student.png](./Diagramy/Vývojový_Diagram_Student.png)
+
+Ukazuje, jak student rezervuje konzultaci. Systém ověřuje kolize v čase, dostupnost a zajišťuje hladký průběh rezervace.
+
+---
+
+### 5. Sekvenční diagram – Vytvoření konzultace učitelem
+![Sekvenční_Diagram_MP.png](./Diagramy/Sekvenční_Diagram_MP.png)
+
+Znázorňuje posloupnost zpráv mezi objekty při vytváření konzultace – např. interakce mezi formulářem, serverem a databází.
+
+---
+
+### 6. Sekvenční diagram – Objednání konzultace studentem
+![Sekvenční_Diagram_Student.png](./Diagramy/Vývojový_Diagram_Student.png)
+
+Sekvenčně popisuje, jak student zadává požadavek, jak server kontroluje pravidla a vrací odpověď.
+
+---
+
+### 7. Stavový diagram – Správa konzultací
+![Stavový_Diagram.png](./Diagramy/Stavový_Diagram.png)
+
+Znázorňuje životní cyklus konzultace – od jejího vytvoření přes rezervaci a případné zrušení až po proběhlý stav.
+
+---
+
+### 8. Hierarchický diagram souborů
+![Diagram_Hierarchie_Souboru.png](./Diagramy/Diagram_Hierarchie_Souboru.png)
+
+Zachycuje organizaci kódu a rozložení složek v projektu. Napomáhá k rychlé orientaci v systému a oddělení zodpovědností.
+
+---
+
+## 🛡️ Bezpečnost
+
+Soubory jako `secret.php`, `database.php` a jiné citlivé konfigurace jsou chráněny `.gitignore` a **nejsou součástí** tohoto veřejného repozitáře.
+
+---
 
 
 🔧 Dokumentace kódu (vybrané akce)
@@ -344,6 +409,71 @@ composer require phpmailer/phpmailer
 * Monitor consultation history or create bookings on behalf of others
 
 ---
+
+## 📊 UML and System Diagrams
+
+### 1. Use Case Diagram  
+![Diagram_Případu_Užití.png](./Diagramy/Diagram_Případu_Užití.png)
+
+This diagram defines the main system functions and the roles of individual users – teacher, student, and administrator – and their interactions with the application.
+
+---
+
+### 2. Class Diagram  
+![Diagram_Tříd.png](./Diagramy/Diagram_Tříd.png)
+
+This diagram illustrates the system's structure through classes, their attributes, methods, and relationships. For example, a student can reserve a consultation, and a teacher can create it.
+
+---
+
+### 3. Activity Diagram – Creating a Consultation by Teacher  
+![Vývojový_Diagram_Učitel.png](./Diagramy/Vývojový_Diagram_Učitel.png)
+
+Describes the system logic when a teacher creates a consultation. Includes decision branches (e.g., whether the teacher already has a consultation at the same time).
+
+---
+
+### 4. Activity Diagram – Reserving a Consultation by Student  
+![Vývojový_Diagram_Student.png](./Diagramy/Vývojový_Diagram_Student.png)
+
+Shows how a student reserves a consultation. The system checks for scheduling conflicts and availability to ensure a smooth booking process.
+
+---
+
+### 5. Sequence Diagram – Consultation Creation by Teacher  
+![Sekvenční_Diagram_MP.png](./Diagramy/Sekvenční_Diagram_MP.png)
+
+Illustrates the sequence of messages exchanged between components during consultation creation – e.g., interaction between form, server, and database.
+
+---
+
+### 6. Sequence Diagram – Consultation Booking by Student  
+![Sekvenční_Diagram_Student.png](./Diagramy/Vývojový_Diagram_Student.png)
+
+Describes the time-ordered communication as a student submits a booking request, and the server performs checks and returns responses.
+
+---
+
+### 7. State Diagram – Consultation Management  
+![Stavový_Diagram.png](./Diagramy/Stavový_Diagram.png)
+
+Shows the lifecycle of a consultation – from creation, through booking and possible cancellation, to completion.
+
+---
+
+### 8. File Hierarchy Diagram  
+![Diagram_Hierarchie_Souboru.png](./Diagramy/Diagram_Hierarchie_Souboru.png)
+
+Illustrates the code structure and organization of folders in the project. Helps with quick orientation and responsibility separation across components.
+
+---
+
+## 🛡️ Security
+
+Files like `secret.php`, `database.php`, and other sensitive configurations are protected by `.gitignore` and are **not included** in this public repository.
+
+
+
 
 ## 🔧 Code Documentation (Key Scripts)
 
