@@ -194,7 +194,7 @@ Znázorňuje posloupnost zpráv mezi objekty při vytváření konzultace – na
 ---
 
 ### 6. Sekvenční diagram – Objednání konzultace studentem
-![Sekvenční_Diagram_Student.png](./Diagramy/Vyvojovy_Diagram_Student.png)
+![Sekvenční_Diagram_Student.png](./Diagramy/Sekvenční_Diagram_Student.png)
 
 Sekvenčně popisuje, jak student zadává požadavek, jak server kontroluje pravidla a vrací odpověď.
 
@@ -448,7 +448,7 @@ Illustrates the sequence of messages exchanged between components during consult
 ---
 
 ### 6. Sequence Diagram – Consultation Booking by Student  
-![Sekvenční_Diagram_Student.png](./Diagramy/Vyvojovy_Diagram_Student.png)
+![Sekvenční_Diagram_Student.png](./Diagramy/Sekvenční_Diagram_Student.png)
 
 Describes the time-ordered communication as a student submits a booking request, and the server performs checks and returns responses.
 
